@@ -26,8 +26,8 @@ public class App {
 		// Creating Student
 		Student st = new Student();
 		st.setId(105);
-		st.setName("Ayush");
-		st.setCity("Banglore");
+		st.setName("Vishal");
+		st.setCity("Rau");
 		System.out.println(st);
 		
 		// Creating object of address class

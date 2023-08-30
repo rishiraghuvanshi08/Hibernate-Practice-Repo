@@ -16,8 +16,8 @@ public class EmDemo {
 		// Student 1
 		Student s1 = new Student();
 		s1.setId(1234);
-		s1.setName("Pankaj");
-		s1.setCity("Gopur");
+		s1.setName("Rishi");
+		s1.setCity("Indore");
 		
 		Certificate certificate = new Certificate();
 		certificate.setCourse("Python");
@@ -28,12 +28,12 @@ public class EmDemo {
 		// Student 2
 		Student s2 = new Student();
 		s2.setId(1235);
-		s2.setName("Lokesh");
+		s2.setName("Ram");
 		s2.setCity("IIST");
 		
 		Certificate certificate1 = new Certificate();
 		certificate1.setCourse("ED");
-		certificate1.setDuration("2 months");
+		certificate1.setDuration("4 months");
 		
 		s2.setCerti(certificate1);
 		
