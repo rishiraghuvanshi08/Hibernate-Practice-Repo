@@ -37,14 +37,30 @@ public class MapDemo {
 		
 		q2.setAnswer(answer2);
 		
+		// Creating question 3
+		Question q3 = new Question();
+		q3.setQuestionId(242);
+		q3.setQuestion("What is Eclipse");
+				
+		// Creating answer 3
+		Answer answer3 = new Answer();
+		answer3.setAnswerID(344);
+		answer3.setAnswer("IDE for writing codes");
+		answer3.setQuestion(q3);
+		
+		q3.setAnswer(answer3);
+		
 		Session s = factory.openSession();
 		Transaction tx = s.beginTransaction();
 		
 		//save
 		s.save(q1);
 		s.save(q2);
+		s.save(q3);
 		s.save(answer);
 		s.save(answer2);
+		s.save(answer3);
+		
 		
 		tx.commit();
 		
